@@ -6,6 +6,9 @@ few attempts of power OFF/ON or reset
 it will boot and respond to ping and allow
 REPL etc over wired ethernet.
 
-Start it just as (can be put in main.py)
+Start it just as this (can be put in main.py)
 
-   import lan8720
+    import lan8720
+
+It will request IP address by DHCP or editign
+file "lan8720.py" you can place fixed IP.
