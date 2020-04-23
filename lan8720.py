@@ -1,6 +1,6 @@
 # LAN8720 MODULE
 
-#GPIO00 - EMAC_TX_CLK : nINT/REFCLK (50MHz) - 4k7 Pullup
+#GPIO00 - EMAC_TX_CLK : nINT/REFCLK (50MHz)
 #GPIO16 - SMI_MDC     : MDC (relocateable)
 #GPIO17 - SMI_MDIO    : MDIO (relocateable)
 #GPIO19 - EMAC_TXD0   : TX0
