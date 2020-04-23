@@ -21,7 +21,9 @@ import network
 from machine import Pin
 lan = network.LAN(mdc=Pin(16), mdio=Pin(17), power=None, id=None, phy_addr=1, phy_type=network.PHY_LAN8720)
 lan.active(True)
-lan.ifconfig(('192.168.18.190', '255.255.255.0', '192.168.18.254', '192.168.18.254'))
+# by default (no parameters), ifconfig() will request DHCP
+lan.ifconfig()
+#lan.ifconfig(('192.168.18.190', '255.255.255.0', '192.168.18.254', '192.168.18.254'))
 
 # press RESET or power ON/OFF ESP32 several times until it boots
 # download speed with ftp from ESP32 flash is 300KB/s (3Mbps)
