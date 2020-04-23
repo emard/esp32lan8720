@@ -28,4 +28,5 @@ lan = network.LAN(mdc=Pin(16), mdio=Pin(17), power=None, id=None, phy_addr=1, ph
 lan.active(True)
 # by default (no parameters), ifconfig() will request DHCP
 lan.ifconfig()
+# set fixed IP (address, netmask, gateway, dns)
 #lan.ifconfig(('192.168.18.190', '255.255.255.0', '192.168.18.254', '192.168.18.254'))
