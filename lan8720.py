@@ -12,6 +12,11 @@
 #GND                  : GND
 #3V3                  : VCC
 
+# press RESET or power ON/OFF ESP32 several times until it boots
+# speed: ftp get from ESP32 flash is 300KB/s (3Mbps)
+
+# some free pins recommended for ESP32 to be used as JTAG programmer
+
 #GPIO23 JTAG_TDI
 #GPIO34 JTAG_TDO (was 19)
 #GPIO18 JTAG_TCK
@@ -24,6 +29,3 @@ lan.active(True)
 # by default (no parameters), ifconfig() will request DHCP
 lan.ifconfig()
 #lan.ifconfig(('192.168.18.190', '255.255.255.0', '192.168.18.254', '192.168.18.254'))
-
-# press RESET or power ON/OFF ESP32 several times until it boots
-# download speed with ftp from ESP32 flash is 300KB/s (3Mbps)
