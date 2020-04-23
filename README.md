@@ -32,5 +32,5 @@ Edit file "lan8720.py" to set fixed IP.
     lan.active(True)
     # by default (no parameters), ifconfig() will request IP from DHCP
     lan.ifconfig()
-    # set fixed IP
+    # set fixed IP (address, netmask, gateway, dns)
     #lan.ifconfig(('192.168.0.190', '255.255.255.0', '192.168.0.1', '192.168.0.1'))
